@@ -49,3 +49,4 @@ public class Npc_Script : MonoBehaviour
         Debug.Log("not get bread");}
     }
 }
+//THAT SUCKS
