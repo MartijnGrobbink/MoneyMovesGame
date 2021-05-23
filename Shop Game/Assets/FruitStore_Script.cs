@@ -38,9 +38,12 @@ public class FruitStore_Script : MonoBehaviour
         Storelevel++;
         StoreUpgradeCost = StoreUpgradeCost + StoreCostMultiplier;
         StoreProductValue = (Storelevel * StoreProductValueMultiplier);
+        
+
             StorelevelText.text = Storelevel.ToString();
             StoreProductValueText.text = StoreProductValue.ToString();
             StoreUpgradeCostText.text = StoreUpgradeCost.ToString();
+            
         } else
         {
             Debug.Log("Need more money");
