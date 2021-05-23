@@ -29,12 +29,6 @@ public class UpgradeSystem : MonoBehaviour
                 levels[a].SetActive(true);
             else
                 levels[a].SetActive(false);
-            
-            
-            
         }
     }
-
-    
-  
 }
