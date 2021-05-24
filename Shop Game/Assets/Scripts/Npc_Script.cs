@@ -17,15 +17,7 @@ public class Npc_Script : MonoBehaviour
     {
         FruitShop = GameObject.FindObjectOfType<FruitStore_Script>();
         BreadShop = GameObject.FindObjectOfType<Bakkery_Script>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        NpcValueText.text = NpcValue.ToString();
-    }
-    public void GenerateOnClick(){
-        if(FruitShop.Storelevel >= 1 || BreadShop.Storelevel >= 1){
+            if(FruitShop.Storelevel >= 1 || BreadShop.Storelevel >= 1){
             while(NpcValue == 0){
             string[] fruitshopstring = new string[] {"true", "false"};
             string FruitshopRandom = fruitshopstring [Random.Range(0, fruitshopstring.Length)];
@@ -38,5 +30,13 @@ public class Npc_Script : MonoBehaviour
             Debug.Log("not get bread");}
             }
         }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    }
+    public void GenerateOnClick(){
+
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class FruitStore_Script : MonoBehaviour
 {
-    private Head_Script Head;
+    private DestroyNPC Head;
 
     public TMP_Text StorelevelText;
     public TMP_Text StoreProductValueText;
@@ -24,7 +24,7 @@ public class FruitStore_Script : MonoBehaviour
     
     // Start is called before the first frame update
     void Start(){
-    Head = GameObject.FindObjectOfType<Head_Script>();
+    Head = GameObject.FindObjectOfType<DestroyNPC>();
     StoreUpgradeCostText.text = StoreUpgradeCost.ToString();
     }
 
