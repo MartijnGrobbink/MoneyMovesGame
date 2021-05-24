@@ -21,13 +21,11 @@ public class Npc_Script : MonoBehaviour
             while(NpcValue == 0){
             string[] fruitshopstring = new string[] {"true", "false"};
             string FruitshopRandom = fruitshopstring [Random.Range(0, fruitshopstring.Length)];
-            if(FruitshopRandom.Contains("true")){NpcValue = NpcValue + FruitShop.StoreProductValue;} else { 
-            Debug.Log("not get fruit");}
+            if(FruitshopRandom.Contains("true")){NpcValue = NpcValue + FruitShop.StoreProductValue;} else { }
 
             string[] breadshopstring = new string[] {"true", "false"};
             string BreadshopRandom = breadshopstring [Random.Range(0, breadshopstring.Length)];
-            if(BreadshopRandom.Contains("true")){NpcValue = NpcValue + BreadShop.StoreProductValue;} else { 
-            Debug.Log("not get bread");}
+            if(BreadshopRandom.Contains("true")){NpcValue = NpcValue + BreadShop.StoreProductValue;} else { }
             }
         }
     }
