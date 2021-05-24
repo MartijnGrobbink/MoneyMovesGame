@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Bakkery_Script : MonoBehaviour
 {
-    private Npc_Script NPC;
+    private Head_Script Head;
     
     public TMP_Text StorelevelText;
     public TMP_Text StoreProductValueText;
@@ -14,7 +14,7 @@ public class Bakkery_Script : MonoBehaviour
 
     public GameObject[] levels;
 
-    int Storelevel = 0;
+    public int Storelevel = 0;
     public double StoreProductValue = 0;
     public double StoreCostMultiplier = 0;
     public double StoreUpgradeCost = 0;
@@ -24,7 +24,7 @@ public class Bakkery_Script : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
-    NPC = GameObject.FindObjectOfType<Npc_Script>();
+    Head = GameObject.FindObjectOfType<Head_Script>();
     StoreUpgradeCostText.text = StoreUpgradeCost.ToString();
     }
 
@@ -36,8 +36,8 @@ public class Bakkery_Script : MonoBehaviour
    
     // Level up the store when clicked
     public void LevelUpOnClick(){
-        if(NPC.Balance >= StoreUpgradeCost){
-        NPC.Balance = NPC.Balance - StoreUpgradeCost;
+        if(Head.Balance >= StoreUpgradeCost){
+        Head.Balance = Head.Balance - StoreUpgradeCost;
         Storelevel++;
         StoreUpgradeCost = StoreUpgradeCost + StoreCostMultiplier;
         StoreProductValue = (Storelevel * StoreProductValueMultiplier);
