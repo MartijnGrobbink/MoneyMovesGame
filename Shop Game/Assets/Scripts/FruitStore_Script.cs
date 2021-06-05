@@ -21,7 +21,6 @@ public class FruitStore_Script : MonoBehaviour
     public double StoreProductValueMultiplier = 0;
     public double NpcValue = 0;
     public int current_level = 0;
-    
     // Start is called before the first frame update
     void Start(){
     Head = GameObject.FindObjectOfType<DestroyNPC>();
