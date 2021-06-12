@@ -7,18 +7,16 @@ public class npc_spawner : MonoBehaviour
     public GameObject npc;
     public Transform npcpos;
     public float timer;
-    private FruitStore_Script FruitShop;
-    private Bakkery_Script BreadShop;
+    private BuildMenu_Script BuildMenu;
     void Start()
     {
-        FruitShop = GameObject.FindObjectOfType<FruitStore_Script>();
-        BreadShop = GameObject.FindObjectOfType<Bakkery_Script>();
+        BuildMenu = GameObject.FindObjectOfType<BuildMenu_Script>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(FruitShop.Storelevel >= 1 || BreadShop.Storelevel >= 1){
+        if(BuildMenu.Building >= 1){
         timer -= Time.deltaTime;
         if (timer<=0) {
             Instantiate(npc, npcpos.position, npcpos.rotation);

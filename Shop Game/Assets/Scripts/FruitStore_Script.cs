@@ -11,31 +11,46 @@ public class FruitStore_Script : MonoBehaviour
     public TMP_Text StorelevelText;
     public TMP_Text StoreProductValueText;
     public TMP_Text StoreUpgradeCostText;
+    public TMP_Text SpentText;
 
     public GameObject[] levels;
+    public GameObject SpentHolder;
 
     public int Storelevel = 0;
+    int i = 0;
     public double StoreProductValue = 0;
     public double StoreCostMultiplier = 0;
     public double StoreUpgradeCost = 0;
     public double StoreProductValueMultiplier = 0;
     public double NpcValue = 0;
     public int current_level = 0;
+    public float timer;
+    
     // Start is called before the first frame update
     void Start(){
     Head = GameObject.FindObjectOfType<DestroyNPC>();
     StoreUpgradeCostText.text = StoreUpgradeCost.ToString();
+    StorelevelText.text = Storelevel.ToString();
+    StoreProductValueText.text = StoreProductValue.ToString();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
+        if(i == 1){
+        timer -= Time.deltaTime;
+        SpentHolder.SetActive(true);
+        }
+        if (timer<=0) {
+            timer = 1;
+            i = 0;
+            SpentHolder.SetActive(false);
+        }
     }
    
     // Level up the store when clicked
     public void LevelUpOnClick(){
         if(Head.Balance >= StoreUpgradeCost){
-        Head.Balance = Head.Balance - StoreUpgradeCost;
+            Head.Balance = Head.Balance - StoreUpgradeCost;
+            SpentText.text = ("-" + StoreUpgradeCost).ToString();
+            i++;
         Storelevel++;
         StoreUpgradeCost = StoreUpgradeCost * StoreCostMultiplier;
         StoreProductValue = (Storelevel * StoreProductValueMultiplier);
