@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Bakkery_Script : MonoBehaviour
 {
-    private DestroyNPC Head;
+    private DestroyNpc Head;
     
     public TMP_Text StorelevelText;
     public TMP_Text StoreProductValueText;
@@ -28,7 +28,7 @@ public class Bakkery_Script : MonoBehaviour
 
     // Start is called before the first frame update
     void Start(){
-    Head = GameObject.FindObjectOfType<DestroyNPC>();
+    Head = GameObject.FindObjectOfType<DestroyNpc>();
     StoreUpgradeCostText.text = StoreUpgradeCost.ToString();
     StorelevelText.text = Storelevel.ToString();
     StoreProductValueText.text = StoreProductValue.ToString();

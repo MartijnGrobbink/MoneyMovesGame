@@ -5,7 +5,7 @@ using TMPro;
 
 public class BuildMenu_Script : MonoBehaviour
 {
-    private DestroyNPC Head;
+    private DestroyNpc Head;
 
     public TMP_Text SpentText;
 
@@ -24,7 +24,7 @@ public class BuildMenu_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    Head = GameObject.FindObjectOfType<DestroyNPC>();
+    Head = GameObject.FindObjectOfType<DestroyNpc>();
 
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class DestroyNPC : MonoBehaviour
+public class DestroyNpc : MonoBehaviour
 {
     private Npc_Script NPC;
 
