@@ -83,39 +83,39 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2058}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 2188}
     - Class: 114
-      Script: {instanceID: 2366}
+      Script: {instanceID: 2264}
     - Class: 114
-      Script: {instanceID: 2404}
+      Script: {instanceID: 2368}
     - Class: 114
-      Script: {instanceID: 2512}
+      Script: {instanceID: 2406}
     - Class: 114
-      Script: {instanceID: 2642}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 2694}
+      Script: {instanceID: 2644}
     - Class: 114
-      Script: {instanceID: 2774}
+      Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 2906}
+      Script: {instanceID: 2776}
     - Class: 114
-      Script: {instanceID: 3208}
+      Script: {instanceID: 2908}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 3544}
+      Script: {instanceID: 3238}
     - Class: 114
-      Script: {instanceID: 3558}
+      Script: {instanceID: 3546}
     - Class: 114
-      Script: {instanceID: 3664}
+      Script: {instanceID: 3560}
     - Class: 114
-      Script: {instanceID: 3816}
+      Script: {instanceID: 3666}
     - Class: 114
-      Script: {instanceID: 3910}
+      Script: {instanceID: 3818}
     - Class: 114
-      Script: {instanceID: 3916}
+      Script: {instanceID: 3912}
     - Class: 114
-      Script: {instanceID: 24794}
+      Script: {instanceID: 3918}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -281,6 +281,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: 461e53be4e83046d6a66b9015afb872a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Esc_press
   - hash:
       serializedVersion: 2
       Hash: 4f60ff347d4efee4ef8cc7f627735018
@@ -833,12 +839,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextEventCheck
-  - hash:
-      serializedVersion: 2
-      Hash: 461e53be4e83046d6a66b9015afb872a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Esc_press
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
