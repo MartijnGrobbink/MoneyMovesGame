@@ -617,7 +617,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &55296825
 RectTransform:
   m_ObjectHideFlags: 0
@@ -900,7 +900,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75903974}
   m_LocalRotation: {x: 0.18301272, y: 0.6830127, z: -0.6830127, w: 0.18301272}
-  m_LocalPosition: {x: 66.16999, y: 29.260021, z: 40.970024}
+  m_LocalPosition: {x: 78.26999, y: 29.260021, z: 34.85002}
   m_LocalScale: {x: 7, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1817,7 +1817,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 124192679}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1102493298}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: ExitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &124192679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2172,6 +2184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 823100747}
+  TheTab: {fileID: 0}
 --- !u!114 &169078151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4102,7 +4115,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 13298d1c1e16ec44a9499e945408dfb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 66
+      value: 78.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 13298d1c1e16ec44a9499e945408dfb7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4110,7 +4123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 13298d1c1e16ec44a9499e945408dfb7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 40.72
+      value: 34.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 13298d1c1e16ec44a9499e945408dfb7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5356,6 +5369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1198850116}
+  TheTab: {fileID: 0}
 --- !u!1001 &324926160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5385,7 +5399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de5c9fcac13f50640a69e9da0690fb3a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 63.56
+      value: 75.66
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de5c9fcac13f50640a69e9da0690fb3a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5393,7 +5407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de5c9fcac13f50640a69e9da0690fb3a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 38.87
+      value: 32.749996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de5c9fcac13f50640a69e9da0690fb3a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6501,6 +6515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1749472498}
+  TheTab: {fileID: 0}
 --- !u!114 &412014202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7919,6 +7934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 939597508}
+  TheTab: {fileID: 0}
 --- !u!1 &471787130
 GameObject:
   m_ObjectHideFlags: 0
@@ -8504,7 +8520,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 525257439}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1342102307}
+        m_TargetAssemblyTypeName: Esc_press, Assembly-CSharp
+        m_MethodName: leave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &525257439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9598,12 +9626,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.50999993
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9615,15 +9655,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bcc3ba32a2130c4b95a9a3db5306d99, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12372,7 +12412,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.4
+  m_fontSize: 22.15
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14549,7 +14589,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894414691}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: 66.359985, y: 24.070019, z: 41.08001}
+  m_LocalPosition: {x: 78.459984, y: 24.070019, z: 34.960007}
   m_LocalScale: {x: 1, y: 10, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14637,7 +14677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &901192894
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14658,7 +14698,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901192891}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14708,7 +14748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 901192891}
   m_LocalRotation: {x: -0, y: 0.5793502, z: -0, w: 0.8150788}
-  m_LocalPosition: {x: -172.82, y: 0.37, z: 68.9}
+  m_LocalPosition: {x: -172.82, y: -0.65, z: 68.9}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1532750828}
@@ -16367,6 +16407,7 @@ GameObject:
   - component: {fileID: 976379681}
   - component: {fileID: 976379680}
   - component: {fileID: 976379679}
+  - component: {fileID: 976379682}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -16437,7 +16478,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 976379680}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 976379682}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: OpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 976379682}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: Closetab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &976379680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16476,6 +16541,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976379677}
   m_CullTransparentMesh: 1
+--- !u!114 &976379682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976379677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ced1e95e60c5d45a669b4e79c8b984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 959194841}
+  TheTab: {fileID: 55296824}
 --- !u!1 &976824010
 GameObject:
   m_ObjectHideFlags: 0
@@ -18420,6 +18499,7 @@ GameObject:
   - component: {fileID: 1102493295}
   - component: {fileID: 1102493297}
   - component: {fileID: 1102493296}
+  - component: {fileID: 1102493298}
   m_Layer: 5
   m_Name: How to play
   m_TagString: Untagged
@@ -18485,6 +18565,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102493294}
   m_CullTransparentMesh: 1
+--- !u!114 &1102493298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102493294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ced1e95e60c5d45a669b4e79c8b984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 1102493294}
+  TheTab: {fileID: 0}
 --- !u!1001 &1103054981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22154,6 +22248,7 @@ GameObject:
   - component: {fileID: 1342102306}
   - component: {fileID: 1342102305}
   - component: {fileID: 1342102304}
+  - component: {fileID: 1342102307}
   m_Layer: 5
   m_Name: ButtonsHolder
   m_TagString: Untagged
@@ -22244,6 +22339,19 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1342102307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342102302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b39e77a46d90c54f945401a5ef2b2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leavemenu: {fileID: 55296824}
 --- !u!1 &1347925439
 GameObject:
   m_ObjectHideFlags: 0
@@ -24191,7 +24299,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1471493403}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -146, y: 50.557, z: 56}
+  m_LocalPosition: {x: -146, y: 50.52, z: 56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1603542989}
@@ -26388,7 +26496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentBalanceText: {fileID: 208671414}
-  Balance: 200
+  Balance: 300
 --- !u!1 &1604318179 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
@@ -26880,6 +26988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1132144134}
+  TheTab: {fileID: 0}
 --- !u!4 &1625618542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 88a41c8002f422a469f40793a4d8a606, type: 3}
@@ -27195,6 +27304,7 @@ GameObject:
   - component: {fileID: 1632773419}
   - component: {fileID: 1632773418}
   - component: {fileID: 1632773417}
+  - component: {fileID: 1632773420}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -27265,7 +27375,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1632773418}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1632773420}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: ExitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1632773418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27304,6 +27426,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632773415}
   m_CullTransparentMesh: 1
+--- !u!114 &1632773420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632773415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ced1e95e60c5d45a669b4e79c8b984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 55296824}
+  TheTab: {fileID: 0}
 --- !u!1 &1639795722
 GameObject:
   m_ObjectHideFlags: 0
@@ -28143,15 +28279,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56d3587edac93734f8ecaa3e697a5419, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.07112087
+      value: -0.07112412
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56d3587edac93734f8ecaa3e697a5419, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.055000305
+      value: 0.45499963
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56d3587edac93734f8ecaa3e697a5419, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.10063879
+      value: -0.10063666
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56d3587edac93734f8ecaa3e697a5419, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28167,7 +28303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56d3587edac93734f8ecaa3e697a5419, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.6481522
+      value: -0.6481521
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 56d3587edac93734f8ecaa3e697a5419, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -30360,36 +30496,48 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.0047916695
+      value: 0.004789207
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.2480259
+      value: 0.54000014
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.054470852
+      value: -0.054466568
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.49968383
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.4996834
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.5003161
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.50031626
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -30397,7 +30545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90.072
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: becbfbb78ad26bc4486de7dbe1ca4071, type: 3}
       propertyPath: m_Name
@@ -30667,7 +30815,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844813791}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 146.8, y: 13.4, z: 120.6}
+  m_LocalPosition: {x: 158.9, y: 13.4, z: 114.479996}
   m_LocalScale: {x: 600, y: 0.1, z: 600}
   m_Children: []
   m_Father: {fileID: 0}
@@ -32674,6 +32822,7 @@ GameObject:
   - component: {fileID: 1972152643}
   - component: {fileID: 1972152642}
   - component: {fileID: 1972152641}
+  - component: {fileID: 1972152644}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -32744,7 +32893,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1972152642}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1972152644}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: OpenMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1972152644}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: Closetab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1972152642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32783,6 +32956,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972152639}
   m_CullTransparentMesh: 1
+--- !u!114 &1972152644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972152639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ced1e95e60c5d45a669b4e79c8b984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 1102493294}
+  TheTab: {fileID: 55296824}
 --- !u!1 &1975763948
 GameObject:
   m_ObjectHideFlags: 0
@@ -33092,6 +33279,7 @@ GameObject:
   - component: {fileID: 1985983750}
   - component: {fileID: 1985983749}
   - component: {fileID: 1985983748}
+  - component: {fileID: 1985983751}
   m_Layer: 5
   m_Name: Button (4)
   m_TagString: Untagged
@@ -33116,7 +33304,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000022069, y: -80}
+  m_AnchoredPosition: {x: -1.7182, y: -79}
   m_SizeDelta: {x: 279.28247, y: 48.17801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1985983748
@@ -33162,7 +33350,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1985983749}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1985983751}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: ExitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1985983749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33201,6 +33401,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985983746}
   m_CullTransparentMesh: 1
+--- !u!114 &1985983751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985983746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ced1e95e60c5d45a669b4e79c8b984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 959194841}
+  TheTab: {fileID: 0}
 --- !u!4 &1987222143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d7de1060741875d479ada63f7434dbb9, type: 3}
@@ -33406,7 +33620,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995398387}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 66.35999, y: 13.910015, z: 41.09002}
+  m_LocalPosition: {x: 78.45999, y: 13.910015, z: 34.970016}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -33859,6 +34073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Menu: {fileID: 1994041001}
+  TheTab: {fileID: 0}
 --- !u!1001 &2023155240
 PrefabInstance:
   m_ObjectHideFlags: 0

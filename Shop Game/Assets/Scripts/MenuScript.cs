@@ -6,6 +6,7 @@ public class MenuScript : MonoBehaviour
 {
 int i = 0;
 public GameObject Menu;
+public GameObject TheTab;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,5 +29,8 @@ public GameObject Menu;
     public void ExitButton(){
         Menu.SetActive(false);
         i = 0;
+    }
+    public void Closetab(){
+        TheTab.SetActive(false);
     }
 }
