@@ -71,7 +71,7 @@ public class BuildMenu_Script : MonoBehaviour
             SpentText.text = ("-" + ButcherBuildCost).ToString();
             Butcher.SetActive(true);
             Butcherexist = true;
-            FruitButton.SetActive(false);
+            ButcherButton.SetActive(false);
             i++;
         }
     }
