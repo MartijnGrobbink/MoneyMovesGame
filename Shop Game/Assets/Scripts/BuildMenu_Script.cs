@@ -5,8 +5,10 @@ using TMPro;
 
 public class BuildMenu_Script : MonoBehaviour
 {
-    private DestroyNpc Head;
-
+    private Head_Script Head;
+    public GameObject FruitButton;
+    public GameObject BreadButton;
+    public GameObject ButcherButton;
     public TMP_Text SpentText;
 
     public GameObject FruitShop;
@@ -17,20 +19,22 @@ public class BuildMenu_Script : MonoBehaviour
     public int FruitShopBuildCost;
     public int BakkeryBuildCost;
     public int ButcherBuildCost;
-    public int Building;
     int i = 0;
     public float timer;
+    public bool Butcherexist = false;
+    public bool Fruitexist = false;
+    public bool Bakkeryexist = false;
 
     // Start is called before the first frame update
     void Start()
     {
-    Head = GameObject.FindObjectOfType<DestroyNpc>();
+    Head = GameObject.FindObjectOfType<Head_Script>();
 
     }
 
     void Update()
     {
-    if(i == 1){
+    if(i >= 1){
         timer -= Time.deltaTime;
         SpentHolder.SetActive(true);
         }
@@ -46,7 +50,8 @@ public class BuildMenu_Script : MonoBehaviour
             Head.Balance = Head.Balance - FruitShopBuildCost;
             SpentText.text = ("-" + FruitShopBuildCost).ToString();
             FruitShop.SetActive(true);
-            Building++;
+            Fruitexist = true;
+            FruitButton.SetActive(false);
             i++;
         }
     }
@@ -55,7 +60,8 @@ public class BuildMenu_Script : MonoBehaviour
             Head.Balance = Head.Balance - BakkeryBuildCost;
             SpentText.text = ("-" + BakkeryBuildCost).ToString();
             Bakkery.SetActive(true);
-            Building++;
+            Bakkeryexist = true;
+            BreadButton.SetActive(false);
             i++;
         }
     }
@@ -64,8 +70,12 @@ public class BuildMenu_Script : MonoBehaviour
             Head.Balance = Head.Balance - ButcherBuildCost;
             SpentText.text = ("-" + ButcherBuildCost).ToString();
             Butcher.SetActive(true);
-            Building++;
+            Butcherexist = true;
+            FruitButton.SetActive(false);
             i++;
         }
     }
 }
+
+
+

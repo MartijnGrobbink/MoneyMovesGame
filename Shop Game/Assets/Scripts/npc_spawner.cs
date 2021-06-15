@@ -16,12 +16,13 @@ public class npc_spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(BuildMenu.Building >= 1){
+        if(BuildMenu.Butcherexist || BuildMenu.Fruitexist || BuildMenu.Bakkeryexist){
         timer -= Time.deltaTime;
         if (timer<=0) {
-            Instantiate(npc, npcpos.position, npcpos.rotation);
-            timer = 5;
-        }
+            Instantiate(npc, npcpos.position, npcpos.rotation).SetActive(true);
+            
+            timer = Random.Range(4, 8);
+            }
         }
     }
 }
